@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      href="https://iconarchive.com/download/i90209/icons8/windows-8/Cinema-Tardis.ico"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Style.css" />
+    <title>DW multi-doctors stories DB</title>
+  </head>
+
+  <body>
+    <div id="searchBar"></div>
+    <div class="container">
+      <div class="row" id="row1">
+        <div class="col-2" id="blank"></div>
+        <div class="col-2" id="doc">
+          <button
+            type="button"
+            id="doc1"
+            onclick="findStory(this,1)"
+            onmouseover="docName(1)"
+            onmouseout="resetName()"
+          >
+            <img
+              src="https://pm1.narvii.com/6138/5cd2502ee101df66311421f3f9d4969f3c486bbf_128.jpg"
+            />
+          </button>
+        </div>
+        <div class="col-2" id="doc">
+          <button
+            type="button"
+            id="doc2"
+            onclick="findStory(this,2)"
+            onmouseover="docName(2)"
+            onmouseout="resetName()"
+          >
+            <img
+              src="https://pm1.narvii.com/5657/f183c374eb72c400f7a503cc987efa1fedfa7d2b_128.jpg"
+            />
+          </button>
+        </div>
+        <div class="col-2" id="doc">
+          <button
+            type="button"
+            id="doc3"
+            onclick="findStory(this,3)"
+            onmouseover="docName(3)"
+            onmouseout="resetName()"
+          >
+            <img
+              src="https://pm1.narvii.com/6342/841c6ab87b2db3ae22d21c5cf8d2efb2397b9d27_128.jpg"
+            />
+          </button>
+        </div>
+        <div class="col-2" id="doc">
+          <button
+            type="button"
+            id="doc4"
+            onclick="findStory(this,4)"
+            onmouseover="docName(4)"
+            onmouseout="resetName()"
+          >
+            <img
+              src="https://pm1.narvii.com/6112/729a920024d7059533ba765db3fe1de27bb3c2f5_128.jpg"
+            />
+          </button>
+        </div>
+        <div class="col-2" id="blank"></div>
+      </div>
+      <div class="row" id="row2">
+        <div class="col-2" id="doc">
+          <button
+            type="button"
+            id="doc13"
+            onclick="findStory(this,13)"
+            onmouseover="docName(13)"
+            onmouseout="resetName()"
+          >
+            <img
+              src="https://pm1.narvii.com/6642/e98bef0b6d6a36d0413ae7d087c17ac8395c04f4_128.jpg"
+            />
+          </button>
+        </div>
+        <div class="col-8 center-block" id="blank" id="PCHello">
+          <h1 class="center-block align-top" id="infoR1"></h1>
+          <div id="siteText"></div>
+        </div>
+        <div class="col-2" id="doc">
+          <button
+            type="button"
+            id="doc5"
+            onclick="findStory(this,5)"
+            onmouseover="docName(5)"
+            onmouseout="resetName()"
+          >
+            <img
+              src="https://pm1.narvii.com/5943/b548a17d44e29fe41173e1071493281a1bfe1ed9_128.jpg"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="row" id="row3">
+        <div class="col-2" id="doc">
+          <button
+            type="button"
+            id="doc12"
+            onclick="findStory(this,12)"
+            onmouseover="docName(12)"
+            onmouseout="resetName()"
+          >
+            <img
+              src="https://pm1.narvii.com/5846/ab60c6c29a71c00828eb654ef31d5de709f38a3c_128.jpg"
+            />
+          </button>
+        </div>
+        <div class="col-8" id="blank">
+          <h1 id="infoR2">pick a doctor to begin</h1>
+          <div id="siteButton"></div>
+        </div>
+        <div class="col-2" id="doc">
+          <button
+            type="button"
+            id="doc6"
+            onclick="findStory(this,6)"
+            onmouseover="docName(6)"
+            onmouseout="resetName()"
+          >
+            <img
+              src="https://pm1.narvii.com/5964/04920981e6f5c73112b969ff712b5ed2d811405a_128.jpg"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="row" id="row4">
+        <div class="col-2" id="doc">
+          <button
+            type="button"
+            id="doc11"
+            onclick="findStory(this,11)"
+            onmouseover="docName(11)"
+            onmouseout="resetName()"
+          >
+            <img
+              src="https://pm1.narvii.com/5686/691fec0115a952cdc8a0a660cf15d71cc811ecd6_128.jpg"
+            />
+          </button>
+        </div>
+        <div class="col-8" id="blank">
+          <h1 id="infoR3"></h1>
+          <div id="siteList"></div>
+        </div>
+        <div class="col-2" id="doc">
+          <button
+            type="button"
+            id="doc7"
+            onclick="findStory(this,7)"
+            onmouseover="docName(7)"
+            onmouseout="resetName()"
+          >
+            <img
+              src="https://pm1.narvii.com/5855/c5a8fc73814b7cbe356920e4020cd11f1533cadd_128.jpg"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="row" id="row5">
+        <div class="col-2" id="blank"></div>
+        <div class="col-2" id="doc">
+          <button
+            type="button"
+            id="doc10"
+            onclick="findStory(this,10)"
+            onmouseover="docName(10)"
+            onmouseout="resetName()"
+          >
+            <img
+              src="https://pm1.narvii.com/6075/a0a4619d5612ecfbe7f36e451dc73cad5e613543_128.jpg"
+            />
+          </button>
+        </div>
+        <div class="col-2" id="doc">
+          <button
+            type="button"
+            id="doc9"
+            onclick="findStory(this,9)"
+            onmouseover="docName(9)"
+            onmouseout="resetName()"
+          >
+            <img
+              src="https://pm1.narvii.com/6159/54b438347308854164dad4be73397be9e3384dbb_128.jpg"
+            />
+          </button>
+        </div>
+        <div class="col-2" id="doc">
+          <button
+            type="button"
+            id="docW"
+            onclick="findStory(this,'w')"
+            onmouseover="docName('w')"
+            onmouseout="resetName()"
+          >
+            <img
+              src="https://pm1.narvii.com/6153/5d3180cc7a134b871139ecafc0b0196b7284e119_128.jpg"
+            />
+          </button>
+        </div>
+        <div class="col-2" id="doc">
+          <button
+            type="button"
+            id="doc8"
+            onclick="findStory(this,8)"
+            onmouseover="docName(8)"
+            onmouseout="resetName()"
+          >
+            <img
+              src="https://pm1.narvii.com/6352/6489ffe3d5510845f6ae3c524948daeeb101a0be_128.jpg"
+            />
+          </button>
+        </div>
+        <div class="col-2" id="blank"></div>
+      </div>
+    </div>
+    <div id="mobile"></div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      var audioStories = {
+        theSirensOFTime: ["The Sirens of Time", 5, 6, 7],
+        projectLazarus: ["Project Lazarus", 6, 7],
+        the4Doctors: ["The Four Doctors", 5, 6, 7, 8],
+        periAndPisconParadox: ["Peri and Piscon Paradox", 5, 6],
+        huntersOfEarth: ["Hunters of Earth", 1, 11],
+        vengeanceOfTheStones: ["Vengeance of The Stones ", 3, 11],
+        shockwave: ["Shockwave", 7, 11],
+        shadowOfDeath: ["Shadow of Death", 2, 11],
+        babblesphere: ["Babblesphere", 4, 11],
+        smokeAndMirrors: ["Smoke and Mirrors", 5, 11],
+        troubleInParadise: ["Trouble in Paradise", 6, 11],
+        enemyAliens: ["Enemy Aliens", 8, 11],
+        theLightAtTheEnd: ["The Light at The End", 1, 2, 3, 4, 5, 6, 7, 8],
+        returnToTelos: ["Return to Telos", 2, 4],
+        theEyeOfTheStorm: ["The Eye of The Storm", 6, 7],
+        collisionCourse: ["Collision Course", 1, 2, 3, 4, 5, 6, 7, 8, 10],
+        daughterOfTheGods: ["Daughter of The Gods", 1, 2],
+        regenerationImpossible: ["Regeneration Impossible", 11, 12],
+        thinTime: ["Thin Time", 5, 11],
+        outOfTime: ["Out of Time", 4, 10]
+      };
+      var comicsStories = {
+        testOfTime: ["The Test of Time", 1, 2, 3, 4, 5, 6],
+        underPressure: ["Under Pressure", 3, 4, 7],
+        timeAndtineAgain: ["Time and Time Again", 1, 2, 3, 4, 5, 6, 7],
+        facades: ["Facades", 6, 10],
+        endgame: ["Endgame", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+        dayOfTheTune: ["Day of The Tune", 1, 2, 3, 4, 12],
+        fourDoctors: ["Four Doctors", "w", 9, 10, 11, 12],
+        openMicNight: ["Open Mic Night", 10, 11, 12],
+        theDoctorsDoClassicComedy: [
+          "The Doctors Do... Classic Comedy",
+          10,
+          11,
+          12
+        ],
+        vortexButterflies: ["Vortex Butterflies", 10, 12],
+        theLostDimension: [
+          "The Lost Dimension",
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          "w",
+          9,
+          10,
+          11,
+          12
+        ],
+        aLittleHelpFromMyFriends: ["A Little Help From My Friends", 10, 13],
+        alternatingCurrent: ["Alternating Current", 10, 13],
+        defenderOfTheDaleks: ["Defender of The Daleks", 10, 13]
+      };
+      var bookStories = {
+        futureImperfect: ["Future Imperfect", 2, 3],
+        echosOfFuturePast: ["Echoes of Future Past", 1, 7],
+        coldFusion: ["Cold Fusion", 5, 7],
+        the8doctors: ["The Eight Doctors", 1, 2, 3, 4, 5, 6, 7, 8],
+        fiveCardDraw: ["Five Card Draw", 1, 2, 3, 5, 6],
+        theEnd: ["The End", 1, 8],
+        theJurorsStory: ["The Juror's Story", 1, 3, 5, 7, 8],
+        categoricalImperative: [
+          "Categorical Imperative",
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        theFeastOfSevenEightAndNine: [
+          "The Feast of Seven... Eight and Nine",
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        theHeroineTheHeroAndTheMegalomanic: [
+          "The Heroine, The Hero and The Megalomaniac",
+          7,
+          8
+        ],
+        notInMyBackYard: ["Not In My Back Yard", 7, 8],
+        shroudOfSorrow: ["Shroud of Sorrow", 2, 3, 6, 7, 9, 11],
+        theConstantDoctor: ["The Constant Doctor", 5, 12],
+        scratchman: ["Scratchman", 4, 13],
+        theKnightTheFoolAndTheDead: [
+          "The Knight, The Fool and The Dead",
+          1,
+          8,
+          9,
+          10
+        ],
+        allFleshIsGrass: ["All Flesh is Grass", 8, 9, 10]
+      };
+      var TVstories = {
+        the3Doctors: ["The Three Doctors", 1, 2, 3],
+        the5Doctors: ["The Five Doctors", 1, 2, 3, 4, 5],
+        the2Doctors: ["The Two Doctors", 2, 6],
+        timeCrash: ["Time Crash", 5, 10],
+        dayOfTheDoctor: [
+          "The Day of The Doctor",
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          "w",
+          9,
+          10,
+          11,
+          12
+        ],
+        deepBreath: ["Deep Breath", 11, 12],
+        twiceUponATime: ["Twice Upon a Time", 1, 12]
+      };
+      var everyStoryEver = {};
+      var returnedTarget = Object.assign(
+        everyStoryEver,
+        TVstories,
+        audioStories,
+        bookStories,
+        comicsStories
+      );
+      var firstPick = 0;
+      var secondPick = 0;
+      function detectMob() {
+        return window.innerWidth <= 721;
+      }
+      var storyTyped = { did: false, name: "" };
+      function docName(num) {
+        if ((num >= 1 && num <= 5) || num == 13) {
+          document.getElementById("infoR2").innerHTML = "";
+          document.getElementById("infoR3").innerHTML = "";
+          if (num == 1) {
+            document.getElementById("infoR1").innerHTML = "↑ first doctor";
+            document.getElementById("infoR1").style.textAlign = "left";
+          }
+          if (num == 2) {
+            document.getElementById("infoR1").innerHTML = "second doctor ↑";
+            document.getElementById("infoR1").style.textAlign = "left";
+          }
+          if (num == 3) {
+            document.getElementById("infoR1").innerHTML = "↑ third doctor";
+            document.getElementById("infoR1").style.textAlign = "right";
+          }
+          if (num == 4) {
+            document.getElementById("infoR1").innerHTML = "fourth doctor ↑";
+            document.getElementById("infoR1").style.textAlign = "right";
+          }
+          if (num == 5) {
+            document.getElementById("infoR1").innerHTML = "fifth doctor →";
+            document.getElementById("infoR1").style.textAlign = "right";
+          }
+          if (num == 13) {
+            document.getElementById("infoR1").innerHTML = "← thirteenth doctor";
+            document.getElementById("infoR1").style.textAlign = "left";
+          }
+        }
+        if (num == 6 || num == 12) {
+          document.getElementById("infoR1").innerHTML = "";
+          document.getElementById("infoR3").innerHTML = "";
+          if (num == 6) {
+            document.getElementById("infoR2").innerHTML = "sixth doctor →";
+            document.getElementById("infoR2").style.textAlign = "right";
+          }
+          if (num == 12) {
+            document.getElementById("infoR2").innerHTML = "← twelfth doctor";
+            document.getElementById("infoR2").style.textAlign = "left";
+          }
+        }
+        if ((num >= 7 && num <= 11) || typeof num != "number") {
+          document.getElementById("infoR2").innerHTML = "";
+          document.getElementById("infoR1").innerHTML = "";
+          if (num == 7) {
+            document.getElementById("infoR3").innerHTML = "seventh doctor →";
+            document.getElementById("infoR3").style.textAlign = "right";
+          }
+          if (num == 8) {
+            document.getElementById("infoR3").innerHTML = "eighth doctor ↓";
+            document.getElementById("infoR3").style.textAlign = "right";
+          }
+          if (num == 9) {
+            document.getElementById("infoR3").innerHTML = "ninth doctor ↓";
+            document.getElementById("infoR3").style.textAlign = "left";
+          }
+          if (num == 10) {
+            document.getElementById("infoR3").innerHTML = "↓ tenth doctor";
+            document.getElementById("infoR3").style.textAlign = "left";
+          }
+          if (num == 11) {
+            document.getElementById("infoR3").innerHTML = "← eleventh doctor";
+            document.getElementById("infoR3").style.textAlign = "left";
+          }
+          if (typeof num != "number") {
+            document.getElementById("infoR3").innerHTML = "↓ war doctor";
+            document.getElementById("infoR3").style.textAlign = "right";
+          }
+        }
+        if (
+          (!detectMob() && firstPick != 0) ||
+          (!detectMob() && storyTyped.did)
+        ) {
+          document.getElementById("infoR1").innerHTML = "";
+          document.getElementById("infoR2").innerHTML = "";
+          document.getElementById("infoR3").innerHTML = "";
+        }
+      }
+      function resetName() {
+        document.getElementById("infoR1").innerHTML = "";
+        if (firstPick != 0) {
+          document.getElementById("infoR2").innerHTML = "";
+        } else if (storyTyped.did) {
+          document.getElementById("infoR2").innerHTML = "";
+        } else {
+          document.getElementById("infoR2").style.textAlign = "center";
+          document.getElementById("infoR2").innerHTML =
+            "pick a doctor to begin";
+        }
+        document.getElementById("infoR3").innerHTML = "";
+      }
+      function resetColorsInAllPics() {
+        document.getElementById("doc1").style.borderColor = "";
+        document.getElementById("doc1").style.backgroundColor = "";
+        document.getElementById("doc2").style.borderColor = "";
+        document.getElementById("doc2").style.backgroundColor = "";
+        document.getElementById("doc3").style.borderColor = "";
+        document.getElementById("doc3").style.backgroundColor = "";
+        document.getElementById("doc4").style.borderColor = "";
+        document.getElementById("doc4").style.backgroundColor = "";
+        document.getElementById("doc5").style.borderColor = "";
+        document.getElementById("doc5").style.backgroundColor = "";
+        document.getElementById("doc6").style.borderColor = "";
+        document.getElementById("doc6").style.backgroundColor = "";
+        document.getElementById("doc7").style.borderColor = "";
+        document.getElementById("doc7").style.backgroundColor = "";
+        document.getElementById("doc8").style.borderColor = "";
+        document.getElementById("doc8").style.backgroundColor = "";
+        document.getElementById("docW").style.borderColor = "";
+        document.getElementById("docW").style.backgroundColor = "";
+        document.getElementById("doc9").style.borderColor = "";
+        document.getElementById("doc9").style.backgroundColor = "";
+        document.getElementById("doc10").style.borderColor = "";
+        document.getElementById("doc10").style.backgroundColor = "";
+        document.getElementById("doc11").style.borderColor = "";
+        document.getElementById("doc11").style.backgroundColor = "";
+        document.getElementById("doc12").style.borderColor = "";
+        document.getElementById("doc12").style.backgroundColor = "";
+        document.getElementById("doc13").style.borderColor = "";
+        document.getElementById("doc13").style.backgroundColor = "";
+        if (
+          (!detectMob() && firstPick != 0) ||
+          (!detectMob() && storyTyped.did)
+        ) {
+          document.getElementById("infoR1").innerHTML = "";
+          document.getElementById("infoR2").innerHTML = "";
+          document.getElementById("infoR3").innerHTML = "";
+        }
+      }
+      function changeDocPicToRed(num) {
+        if (num == 1) {
+          document.getElementById("doc1").style.borderColor = "red";
+          document.getElementById("doc1").style.backgroundColor = "red";
+        }
+        if (num == 2) {
+          document.getElementById("doc2").style.borderColor = "red";
+          document.getElementById("doc2").style.backgroundColor = "red";
+        }
+        if (num == 3) {
+          document.getElementById("doc3").style.borderColor = "red";
+          document.getElementById("doc3").style.backgroundColor = "red";
+        }
+        if (num == 4) {
+          document.getElementById("doc4").style.borderColor = "red";
+          document.getElementById("doc4").style.backgroundColor = "red";
+        }
+        if (num == 5) {
+          document.getElementById("doc5").style.borderColor = "red";
+          document.getElementById("doc5").style.backgroundColor = "red";
+        }
+        if (num == 6) {
+          document.getElementById("doc6").style.borderColor = "red";
+          document.getElementById("doc6").style.backgroundColor = "red";
+        }
+        if (num == 7) {
+          document.getElementById("doc7").style.borderColor = "red";
+          document.getElementById("doc7").style.backgroundColor = "red";
+        }
+        if (num == 8) {
+          document.getElementById("doc8").style.borderColor = "red";
+          document.getElementById("doc8").style.backgroundColor = "red";
+        }
+        if (num == "w") {
+          document.getElementById("docW").style.borderColor = "red";
+          document.getElementById("docW").style.backgroundColor = "red";
+        }
+        if (num == 9) {
+          document.getElementById("doc9").style.borderColor = "red";
+          document.getElementById("doc9").style.backgroundColor = "red";
+        }
+        if (num == 10) {
+          document.getElementById("doc10").style.borderColor = "red";
+          document.getElementById("doc10").style.backgroundColor = "red";
+        }
+        if (num == 11) {
+          document.getElementById("doc11").style.borderColor = "red";
+          document.getElementById("doc11").style.backgroundColor = "red";
+        }
+        if (num == 12) {
+          document.getElementById("doc12").style.borderColor = "red";
+          document.getElementById("doc12").style.backgroundColor = "red";
+        }
+        if (num == 13) {
+          document.getElementById("doc13").style.borderColor = "red";
+          document.getElementById("doc13").style.backgroundColor = "red";
+        }
+      }
+      function otherDocsInStory(num, story) {
+        var otherDocs = [];
+        var i;
+        for (i = 1; i < story.length; i++) {
+          if (story[i] != num) {
+            otherDocs.push(story[i]);
+            changeDocPicToRed(story[i]);
+          }
+        }
+        return otherDocs;
+      }
+      function otherDocsInStory2(num1, num2, story) {
+        var otherDocs = [];
+        var full = fullStory(story);
+        var i;
+        for (i = 1; i < full.length; i++) {
+          if (full[i] != num1 && full[i] != num2) {
+            otherDocs.push(changeDocName(full[i]));
+          }
+        }
+        return otherDocs;
+      }
+      function moreInTheStory(num1, num2, story) {
+        var otherDocs = otherDocsInStory2(num1, num2, story);
+        if (otherDocs.length > 0) {
+          return true;
+        }
+        return false;
+      }
+      function fullStory(short) {
+        var full = [];
+        for (var story in everyStoryEver) {
+          if (everyStoryEver.hasOwnProperty(story)) {
+            if (everyStoryEver[story][0] == short) {
+              full = everyStoryEver[story];
+            }
+          }
+        }
+        return full;
+      }
+      function fullStory2(short) {
+        var full = [];
+        for (var story in everyStoryEver) {
+          if (everyStoryEver.hasOwnProperty(story)) {
+            if (everyStoryEver[story][0].toLowerCase() == short.toLowerCase()) {
+              full = everyStoryEver[story];
+            }
+          }
+        }
+        return full;
+      }
+      function storyExist(media, name) {
+        if (media == "all") {
+          for (var story in everyStoryEver) {
+            if (everyStoryEver.hasOwnProperty(story)) {
+              if (
+                everyStoryEver[story][0].toLowerCase() == name.toLowerCase()
+              ) {
+                return true;
+              }
+            }
+          }
+        }
+        if (media == "tv") {
+          for (var story in TVstories) {
+            if (TVstories.hasOwnProperty(story)) {
+              if (TVstories[story][0].toLowerCase() == name.toLowerCase()) {
+                return true;
+              }
+            }
+          }
+        }
+        if (media == "comics") {
+          for (var story in comicsStories) {
+            if (comicsStories.hasOwnProperty(story)) {
+              if (comicsStories[story][0].toLowerCase() == name.toLowerCase()) {
+                return true;
+              }
+            }
+          }
+        }
+        if (media == "book") {
+          for (var story in bookStories) {
+            if (bookStories.hasOwnProperty(story)) {
+              if (bookStories[story][0].toLowerCase() == name.toLowerCase()) {
+                return true;
+              }
+            }
+          }
+        }
+        if (media == "audio") {
+          for (var story in audioStories) {
+            if (audioStories.hasOwnProperty(story)) {
+              if (audioStories[story][0].toLowerCase() == name.toLowerCase()) {
+                return true;
+              }
+            }
+          }
+        }
+        return false;
+      }
+      function properStoryName(name) {
+        var realName = "";
+        for (var story in everyStoryEver) {
+          if (everyStoryEver.hasOwnProperty(story)) {
+            if (everyStoryEver[story][0].toLowerCase() == name.toLowerCase()) {
+              realName = everyStoryEver[story][0];
+            }
+          }
+        }
+        return realName;
+      }
+      function allDocsInStory(story) {
+        resetColorsInAllPics();
+        var full = fullStory2(story);
+        var docs = [];
+        var i;
+        for (i = 1; i < full.length; i++) {
+          docs.push(full[i]);
+          changeDocPicToRed(full[i]);
+        }
+        return docs;
+      }
+      function changeDocName(num) {
+        if (num == 1) {
+          num = " the first doctor";
+        }
+        if (num == 2) {
+          num = " the second doctor";
+        }
+        if (num == 3) {
+          num = " the third doctor";
+        }
+        if (num == 4) {
+          num = " the fourth doctor";
+        }
+        if (num == 5) {
+          num = " the fifth doctor";
+        }
+        if (num == 6) {
+          num = " the sixth doctor";
+        }
+        if (num == 7) {
+          num = " the seventh doctor";
+        }
+        if (num == 8) {
+          num = " the eighth doctor";
+        }
+        if (num == "w") {
+          num = " the war doctor";
+        }
+        if (num == 9) {
+          num = " the ninth doctor";
+        }
+        if (num == 10) {
+          num = " the tenth doctor";
+        }
+        if (num == 11) {
+          num = " the eleventh doctor";
+        }
+        if (num == 12) {
+          num = " the twelfth doctor";
+        }
+        if (num == 13) {
+          num = " the thirteenth doctor";
+        }
+        return num;
+      }
+      function changeDocsNamesInStory(story) {
+        for (var i = 0; i < story.length; i++) {
+          story[i] = changeDocName(story[i]);
+        }
+        return story;
+      }
+      function docInStory(num, story) {
+        var i;
+        console.log("checking " + story[0] + "...");
+        if (docInStoryQuick(num, story)) {
+          console.log(
+            "is in: " +
+              story[0] +
+              " with" +
+              changeDocsNamesInStory(otherDocsInStory(num, story))
+          );
+          return true;
+        }
+        console.log("not in " + story[0] + "!");
+        return false;
+      }
+      function docInStoryQuick(num, story) {
+        var i;
+        for (i = 1; i < story.length; i++) {
+          if (story[i] == num) {
+            return true;
+          }
+        }
+        return false;
+      }
+
+      function storiesTheDocIsIn(num) {
+        var stories = [];
+        for (var story in everyStoryEver) {
+          if (everyStoryEver.hasOwnProperty(story)) {
+            if (docInStoryQuick(num, everyStoryEver[story])) {
+              stories.push(everyStoryEver[story][0]);
+            }
+          }
+        }
+        return stories;
+      }
+      function allStoriesNames(media) {
+        var stories = [];
+        if (media == "all") {
+          for (var story in everyStoryEver) {
+            if (everyStoryEver.hasOwnProperty(story)) {
+              stories.push(everyStoryEver[story][0]);
+            }
+          }
+        }
+        if (media == "comics") {
+          for (var story in comicsStories) {
+            if (comicsStories.hasOwnProperty(story)) {
+              stories.push(comicsStories[story][0]);
+            }
+          }
+        }
+        if (media == "book") {
+          for (var story in bookStories) {
+            if (bookStories.hasOwnProperty(story)) {
+              stories.push(bookStories[story][0]);
+            }
+          }
+        }
+        if (media == "audio") {
+          for (var story in audioStories) {
+            if (audioStories.hasOwnProperty(story)) {
+              stories.push(audioStories[story][0]);
+            }
+          }
+        }
+        if (media == "tv") {
+          for (var story in TVstories) {
+            if (TVstories.hasOwnProperty(story)) {
+              stories.push(TVstories[story][0]);
+            }
+          }
+        }
+        return stories;
+      }
+      function findMutualStoryQuick(num1, num2) {
+        var mutualStories = [];
+        if (num1 == num2) {
+          return storiesTheDocIsIn(num1);
+        }
+        for (var story in everyStoryEver) {
+          if (everyStoryEver.hasOwnProperty(story)) {
+            if (
+              docInStoryQuick(num1, everyStoryEver[story]) &&
+              docInStoryQuick(num2, everyStoryEver[story])
+            ) {
+              mutualStories.push(everyStoryEver[story][0]);
+            }
+          }
+        }
+        if (mutualStories.length < 1) {
+          return [];
+        }
+        return mutualStories;
+      }
+
+      function findMutualStory(num1, num2) {
+        if (num1 == num2) {
+          console.log("you can't pick the same doctor twice...");
+          return;
+        }
+        var mutualStories = [];
+        for (var story in everyStoryEver) {
+          if (everyStoryEver.hasOwnProperty(story)) {
+            if (
+              docInStoryQuick(num1, everyStoryEver[story]) &&
+              docInStoryQuick(num2, everyStoryEver[story])
+            ) {
+              mutualStories.push(everyStoryEver[story][0]);
+            }
+          }
+        }
+        var i;
+        if (mutualStories.length > 0) {
+          for (i = 0; i < mutualStories.length; i++) {
+            console.log(
+              changeDocName(num1) +
+                " and" +
+                changeDocName(num2) +
+                " are together in " +
+                mutualStories[i]
+            );
+          }
+        }
+        if (mutualStories.length == 0) {
+          console.log(
+            changeDocName(num1) +
+              " and" +
+              changeDocName(num2) +
+              " are not in any story together"
+          );
+        }
+      }
+      function checkWhichPick(e) {
+        if (firstPick != 0) {
+          return 2;
+        }
+        return 1;
+      }
+
+      function findStory(e, num) {
+        console.log(
+          "pick #" + checkWhichPick(e) + ": this is" + changeDocName(num)
+        );
+        storyTyped.did = false;
+        if (firstPick == 0 && secondPick == 0) {
+          firstPick = num;
+          if (!detectMob()) {
+            document.getElementById("infoR2").innerHTML = "";
+            //document.getElementById("site").style.borderStyle="groove";
+          }
+          resetColorsInAllPics();
+          for (var story in everyStoryEver) {
+            if (everyStoryEver.hasOwnProperty(story)) {
+              docInStory(num, everyStoryEver[story]);
+            }
+          }
+        }
+        if (firstPick != 0 && secondPick == 0) {
+          secondPick = num;
+          findMutualStory(secondPick, firstPick);
+        }
+        if (firstPick != 0 && secondPick != 0) {
+          firstPick = secondPick;
+          secondPick = num;
+          findMutualStory(secondPick, firstPick);
+        }
+      }
+    </script>
+
+    <script
+      src="https://unpkg.com/react@16.0.0-beta.2/umd/react.production.min.js"
+      integrity="sha384-lJJbYsDe7wDuOttI/MIHfj68o3fVZOhJDxEn0cTPbDq5mkzjF1p+AFEp3r/HpUnt"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16.0.0-beta.2/umd/react-dom.production.min.js"
+      integrity="sha384-urrH8a5NtX87DSmFO4pKPICl5RHszNM6yx75JIYhynT2ukWDK4skf0YAh4EDEdD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/babel-standalone@6.24.2/babel.min.js"
+      charset="utf-8"
+    ></script>
+    <script type="text/babel">
+      class Mobile extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            stories: [],
+            name: "",
+            name2: "",
+            sum: 1,
+            clickedOnce: false,
+            clickedStory: false,
+            storyName: "",
+            docsInStoryPicked: [],
+            docInStoryPickedText: ""
+          };
+          this.click = this.click.bind(this);
+          this.click2 = this.click2.bind(this);
+          this.clickFirst = this.clickFirst.bind(this);
+          this.storyClick = this.storyClick.bind(this);
+        }
+        componentDidMount() {
+          this.interval = setInterval(() => this.doesNothing(), 1000);
+        }
+        componentWillUnmount() {
+          clearInterval(this.interval);
+        }
+        storyClick(story) {
+          this.setState({ clickedStory: true });
+          this.setState({
+            storyName: story
+          });
+          if (moreInTheStory(firstPick, secondPick, this.state.storyName)) {
+            this.setState({
+              docInStoryPickedText:
+                "with:" +
+                otherDocsInStory2(firstPick, secondPick, story).concat()
+            });
+          } else {
+            this.setState({ docInStoryPickedText: "with no other doctor" });
+          }
+          storyTyped.did = false;
+          allDocsInStory(story);
+        }
+        click(event) {
+          this.setState({ clickedOnce: true });
+          storyTyped.did = false;
+          this.setState({ sum: this.state.sum + 1 });
+          this.setState({ stories: storiesTheDocIsIn(firstPick) });
+          if (this.state.stories.length < 1) {
+            this.setState({ stories: ["there are no stories"] });
+          }
+        }
+        click2(event) {
+          this.setState({ clickedOnce: true });
+          storyTyped.did = false;
+          this.setState({
+            stories: findMutualStoryQuick(firstPick, secondPick)
+          });
+          if (this.state.stories.length < 1) {
+            this.setState({ stories: ["there are no stories"] });
+          }
+        }
+        storyInStories(checkedStory) {
+          var i;
+          for (i = 0; i < this.state.stories.length; i++) {
+            if (this.state.stories[i] == checkedStory) {
+              return true;
+            }
+          }
+          return false;
+        }
+        doesNothing() {
+          if (firstPick == 0) {
+            this.setState({ name: " no doc was picked" });
+          }
+          if (firstPick != 0 && secondPick == 0) {
+            this.setState({ name: changeDocName(firstPick) });
+            this.setState({ name2: " now pick another doc" });
+            if (this.state.clickedOnce) {
+              this.setState({ stories: storiesTheDocIsIn(firstPick) });
+              if (this.state.stories.length < 1) {
+                this.setState({ stories: ["there are no stories"] });
+              }
+              if (this.state.clickedStory) {
+                if (
+                  moreInTheStory(firstPick, secondPick, this.state.storyName)
+                ) {
+                  this.setState({
+                    docInStoryPickedText:
+                      "with:" +
+                      otherDocsInStory2(
+                        firstPick,
+                        secondPick,
+                        this.state.storyName
+                      ).concat()
+                  });
+                }
+                if (
+                  !moreInTheStory(firstPick, secondPick, this.state.storyName)
+                ) {
+                  this.setState({
+                    docInStoryPickedText: "with no other doctor"
+                  });
+                }
+                if (!this.storyInStories(this.state.storyName)) {
+                  this.setState({ storyName: "" });
+                  this.setState({ docInStoryPickedText: "" });
+                }
+                if (
+                  this.state.stories.length < 1 ||
+                  this.state.stories[0] == "there are no stories"
+                ) {
+                  this.setState({ storyName: "" });
+                  this.setState({ docInStoryPickedText: "" });
+                } else if (
+                  this.state.stories.length == 1 &&
+                  this.state.stories[0] != "there are no stories"
+                ) {
+                  this.setState({ storyName: this.state.stories[0] });
+                  if (
+                    moreInTheStory(firstPick, secondPick, this.state.storyName)
+                  ) {
+                    this.setState({
+                      docInStoryPickedText:
+                        "with:" +
+                        otherDocsInStory2(
+                          firstPick,
+                          secondPick,
+                          this.state.stories[0]
+                        ).concat()
+                    });
+                  }
+                  if (
+                    !moreInTheStory(firstPick, secondPick, this.state.storyName)
+                  ) {
+                    this.setState({
+                      docInStoryPickedText: "with no other doctor"
+                    });
+                  }
+                }
+              }
+            }
+          }
+          if (firstPick != 0 && secondPick != 0) {
+            this.setState({ name: changeDocName(firstPick) });
+            this.setState({ name2: changeDocName(secondPick) });
+            if (this.state.clickedOnce) {
+              this.setState({
+                stories: findMutualStoryQuick(firstPick, secondPick)
+              });
+              if (this.state.stories.length < 1) {
+                this.setState({ stories: ["there are no stories"] });
+              }
+            }
+            if (this.state.clickedStory) {
+              if (moreInTheStory(firstPick, secondPick, this.state.storyName)) {
+                this.setState({
+                  docInStoryPickedText:
+                    "with:" +
+                    otherDocsInStory2(
+                      firstPick,
+                      secondPick,
+                      this.state.storyName
+                    ).concat()
+                });
+                if (!storyTyped.did) {
+                  allDocsInStory(this.state.storyName);
+                }
+              }
+              if (
+                !moreInTheStory(firstPick, secondPick, this.state.storyName)
+              ) {
+                this.setState({
+                  docInStoryPickedText: "with no other doctor"
+                });
+                if (!storyTyped.did) {
+                  allDocsInStory(this.state.storyName);
+                }
+              }
+              if (!this.storyInStories(this.state.storyName)) {
+                this.setState({ storyName: "" });
+                this.setState({ docInStoryPickedText: "" });
+              }
+              if (
+                this.state.stories.length < 1 ||
+                this.state.stories[0] == "there are no stories"
+              ) {
+                this.setState({ storyName: "" });
+                this.setState({ docInStoryPickedText: "" });
+              } else if (
+                this.state.stories.length == 1 &&
+                this.state.stories[0] != "there are no stories"
+              ) {
+                this.setState({ storyName: this.state.stories[0] });
+                if (
+                  moreInTheStory(firstPick, secondPick, this.state.storyName)
+                ) {
+                  this.setState({
+                    docInStoryPickedText:
+                      "with:" +
+                      otherDocsInStory2(
+                        firstPick,
+                        secondPick,
+                        this.state.stories[0]
+                      ).concat()
+                  });
+                }
+                if (
+                  !moreInTheStory(firstPick, secondPick, this.state.storyName)
+                ) {
+                  this.setState({
+                    docInStoryPickedText: "with no other doctor"
+                  });
+                }
+              }
+            }
+          }
+        }
+        clickFirst(event) {
+          this.setState({ name: "pick a doc" });
+          this.setState({ sum: this.state.sum + 1 });
+        }
+        render() {
+          if (
+            firstPick != 0 &&
+            secondPick != 0 &&
+            firstPick != secondPick &&
+            !storyTyped.did
+          ) {
+            return (
+              <div>
+                <Text name={this.state.name} name2={this.state.name2} />
+                <Clicking
+                  click={this.click2}
+                  hasClicked={this.state.clickedOnce}
+                />
+                <StoryInfo
+                  storyName={this.state.storyName}
+                  otherDocs={this.state.docInStoryPickedText}
+                />
+                <List stories={this.state.stories} clicky={this.storyClick} />
+              </div>
+            );
+          }
+          if (
+            ((firstPick != 0 && secondPick == 0) ||
+              (firstPick != 0 && secondPick != 0 && firstPick == secondPick)) &&
+            !storyTyped.did
+          ) {
+            return (
+              <div>
+                <Text name={this.state.name} />
+                <Clicking
+                  click={this.click}
+                  hasClicked={this.state.clickedOnce}
+                />
+                <StoryInfo
+                  storyName={this.state.storyName}
+                  otherDocs={this.state.docInStoryPickedText}
+                />
+                <List stories={this.state.stories} clicky={this.storyClick} />
+              </div>
+            );
+          }
+          if (firstPick == 0 && !storyTyped.did) {
+            return <h1></h1>;
+          }
+          if (storyTyped.did) {
+            return (
+              <StoryInfo
+                storyName={storyTyped.name}
+                otherDocs={
+                  "with:" +
+                  changeDocsNamesInStory(
+                    allDocsInStory(storyTyped.name)
+                  ).concat()
+                }
+              />
+            );
+          }
+        }
+      }
+      class Clicking extends React.Component {
+        render() {
+          if (this.props.hasClicked) {
+            return <div></div>;
+          }
+          if (firstPick != 0 && secondPick != 0 && firstPick != secondPick) {
+            return (
+              <button type="button" onClick={this.props.click}>
+                click here to see their stories together
+              </button>
+            );
+          }
+          if (
+            (firstPick != 0 && secondPick == 0) ||
+            (firstPick != 0 && secondPick != 0 && firstPick == secondPick)
+          ) {
+            return (
+              <button type="button" onClick={this.props.click}>
+                click here to see the stories
+              </button>
+            );
+          }
+        }
+      }
+      class Text extends React.Component {
+        render() {
+          if (firstPick != 0 && secondPick != 0 && firstPick != secondPick) {
+            return (
+              <h1 id="whoIPicked">
+                you picked{this.props.name} and{this.props.name2}
+              </h1>
+            );
+          }
+          if (
+            (firstPick != 0 && secondPick == 0) ||
+            (firstPick != 0 && secondPick != 0 && firstPick == secondPick)
+          ) {
+            return <h1 id="whoIPicked">you picked{this.props.name}</h1>;
+          }
+          if (firstPick == 0) {
+            return <h1></h1>;
+          }
+        }
+      }
+      class List extends React.Component {
+        constructor(props) {
+          super(props);
+          this.click = this.click.bind(this);
+        }
+        click(event) {
+          this.props.clicky(event.currentTarget.textContent);
+        }
+        render() {
+          return (
+            <ul className="list-group">
+              {this.props.stories.map((story) => (
+                <li
+                  onClick={this.click}
+                  className="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  {story}
+                  <a href="#storyInfo"></a>
+                </li>
+              ))}
+            </ul>
+          );
+        }
+      }
+      class StoryInfo extends React.Component {
+        render() {
+          return (
+            <div class="card" id="storyInfo">
+              <div class="card-header">
+                <h2 class="card-title">{this.props.storyName}</h2>
+              </div>
+              <div class="card-body">
+                <h1 class="card-text">{this.props.otherDocs}</h1>
+              </div>
+            </div>
+          );
+        }
+      }
+
+      var a;
+      if (detectMob()) {
+        a = document.getElementById("mobile");
+        ReactDOM.render(<Mobile />, a);
+      }
+
+      class ClickingForSite extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = { text: "", clickedOnce: false };
+          this.click = this.click.bind(this);
+          this.doesNothing = this.doesNothing.bind(this);
+        }
+        componentDidMount() {
+          this.interval = setInterval(() => this.doesNothing(), 1000);
+        }
+        componentWillUnmount() {
+          clearInterval(this.interval);
+        }
+        click() {
+          this.setState({ clickedOnce: true });
+        }
+        doesNothing() {
+          if (
+            (firstPick != 0 && secondPick == 0) ||
+            (firstPick != 0 && secondPick != 0 && firstPick == secondPick)
+          ) {
+            this.setState({ text: "click here to see the stories" });
+          }
+          if (firstPick != 0 && secondPick != 0 && firstPick != secondPick) {
+            this.setState({ text: "click here to see their stories together" });
+          }
+        }
+        render() {
+          if (firstPick != 0 && !this.state.clickedOnce) {
+            return (
+              <button id="showStories" type="button" onClick={this.click}>
+                {this.state.text}
+              </button>
+            );
+          }
+          if (firstPick == 0) {
+            return <h1></h1>;
+          }
+          if (this.state.clickedOnce) {
+            return <ListForSite />;
+          }
+        }
+      }
+
+      class TextForSite extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            name: "",
+            name2: "",
+            text: ""
+          };
+        }
+        componentDidMount() {
+          this.interval = setInterval(() => this.doesNothing(), 1000);
+        }
+        componentWillUnmount() {
+          clearInterval(this.interval);
+        }
+        doesNothing() {
+          if (firstPick == 0) {
+            this.setState({ name: "pick a doc" });
+          }
+          if (firstPick != 0 && secondPick == 0) {
+            this.setState({ name: changeDocName(firstPick) });
+            this.setState({ name2: " now pick another doc" });
+          }
+          if (firstPick != 0 && secondPick != 0) {
+            this.setState({ name: changeDocName(firstPick) });
+            this.setState({ name2: changeDocName(secondPick) });
+          }
+          if (firstPick != 0 && secondPick != 0 && firstPick != secondPick) {
+            this.setState({
+              text: "you picked" + this.state.name + " and" + this.state.name2
+            });
+          }
+          if (
+            (firstPick != 0 && secondPick == 0) ||
+            (firstPick != 0 && secondPick != 0 && firstPick == secondPick)
+          ) {
+            this.setState({ text: "you picked" + this.state.name });
+          }
+          if (firstPick == 0) {
+            this.setState({ text: "" });
+          }
+        }
+        render() {
+          return <h1 id="whoIPicked">{this.state.text}</h1>;
+        }
+      }
+
+      var storyClicked = { did: false, name: "" };
+
+      class ListForSite extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            stories: [],
+            chosenStory: ""
+          };
+          this.click = this.click.bind(this);
+        }
+        componentDidMount() {
+          this.interval = setInterval(() => this.doesNothing(), 1000);
+        }
+        componentWillUnmount() {
+          clearInterval(this.interval);
+        }
+        doesNothing() {
+          if (
+            (firstPick != 0 && secondPick == 0) ||
+            (firstPick != 0 && secondPick != 0 && firstPick == secondPick)
+          ) {
+            this.setState({
+              stories: storiesTheDocIsIn(firstPick)
+            });
+          }
+          if (firstPick != 0 && secondPick != 0 && firstPick != secondPick) {
+            this.setState({
+              stories: findMutualStoryQuick(firstPick, secondPick)
+            });
+          }
+          if (this.state.stories.length < 1) {
+            this.setState({
+              stories: ["there are no stories"]
+            });
+          }
+          if (storyClicked.did) {
+            storyClicked.name = this.state.chosenStory;
+            if (!this.storyInStories(this.state.chosenStory)) {
+              storyClicked.name = "";
+            }
+            if (
+              this.state.stories.length < 1 ||
+              this.state.stories[0] == "there are no stories"
+            ) {
+              storyClicked.name = "sorry no story.";
+            } else if (
+              this.state.stories.length == 1 &&
+              this.state.stories[0] != "there are no stories"
+            ) {
+              storyClicked.name = this.state.stories[0];
+            }
+          }
+        }
+        storyInStories(checkedStory) {
+          var i;
+          for (i = 0; i < this.state.stories.length; i++) {
+            if (this.state.stories[i] == checkedStory) {
+              return true;
+            }
+          }
+          return false;
+        }
+        click(event) {
+          storyClicked.did = true;
+          storyTyped.did = false;
+          this.setState({
+            chosenStory: event.currentTarget.textContent
+          });
+        }
+        render() {
+          if (firstPick == 0) {
+            return <h1></h1>;
+          }
+          if (firstPick != 0) {
+            return (
+              <ul className="list-group">
+                {this.state.stories.map((story) => (
+                  <li
+                    onClick={this.click}
+                    className="list-group-item d-flex justify-content-between align-items-center"
+                  >
+                    {story}
+                  </li>
+                ))}
+              </ul>
+            );
+          }
+        }
+      }
+
+      class StoryInfoForSite extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = { StoryName: "", text: [] };
+        }
+        componentDidMount() {
+          this.interval = setInterval(() => this.doesNothing(), 1000);
+        }
+        componentWillUnmount() {
+          clearInterval(this.interval);
+        }
+        doesNothing() {
+          this.setState({
+            StoryName: storyClicked.name
+          });
+
+          if (moreInTheStory(firstPick, secondPick, storyClicked.name)) {
+            if (!storyTyped.did) {
+              allDocsInStory(storyClicked.name);
+            }
+            this.setState({
+              text:
+                "with:" +
+                otherDocsInStory2(
+                  firstPick,
+                  secondPick,
+                  storyClicked.name
+                ).concat()
+            });
+          }
+          if (!moreInTheStory(firstPick, secondPick, storyClicked.name)) {
+            if (!storyTyped.did) {
+              allDocsInStory(storyClicked.name);
+            }
+            this.setState({ text: "with no other doctor" });
+          }
+          if (storyClicked.name == "sorry no story.") {
+            this.setState({ text: "" });
+          }
+          if (storyClicked.name == "") {
+            this.setState({ text: "" });
+          }
+          if (storyTyped.did) {
+            this.setState({
+              StoryName: storyTyped.name
+            });
+            this.setState({
+              text:
+                "with:" +
+                changeDocsNamesInStory(allDocsInStory(storyTyped.name)).concat()
+            });
+          }
+        }
+        render() {
+          if (storyClicked.did || storyTyped.did) {
+            return (
+              <div class="card">
+                <div class="card-header">
+                  <h1 class="card-title">{this.state.StoryName}</h1>
+                </div>
+                <div class="card-body">
+                  <h2 class="card-text">{this.state.text}</h2>
+                </div>
+              </div>
+            );
+          }
+          if (!storyClicked.did && !storyTyped.did) {
+            return <h1></h1>;
+          }
+        }
+      }
+
+      var site1 = document.getElementById("siteText");
+      var site2 = document.getElementById("siteButton");
+      var site3 = document.getElementById("siteList");
+      if (!detectMob()) {
+        ReactDOM.render(<TextForSite />, site1);
+        ReactDOM.render(<ClickingForSite />, site2);
+        ReactDOM.render(<StoryInfoForSite />, site3);
+      }
+
+      class Searching extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            stories: allStoriesNames("all"),
+            term: "",
+            media: "all"
+          };
+          this.click = this.click.bind(this);
+          this.handleTermChange = this.handleTermChange.bind(this);
+          this.handleListChange = this.handleListChange.bind(this);
+        }
+        click(event) {
+          console.log(this.state.term + " in " + this.state.media);
+          if (storyExist(this.state.media, this.state.term)) {
+            storyTyped.did = true;
+            storyTyped.name = properStoryName(this.state.term);
+            console.log("the story is there.");
+            console.log(
+              "with:" +
+                changeDocsNamesInStory(allDocsInStory(this.state.term)).concat()
+            );
+          } else {
+            console.log("the story is NOT there.");
+          }
+        }
+        handleTermChange(event) {
+          this.setState({ term: event.target.value });
+        }
+        handleListChange(event) {
+          this.setState({ media: event.target.value });
+          this.setState({ stories: allStoriesNames(event.target.value) });
+        }
+        render() {
+          return (
+            <div id="searchBar">
+              <input
+                list="datalistOptions"
+                id="exampleDataList"
+                placeholder="type and pick a story..."
+                onChange={this.handleTermChange}
+              />
+              <datalist id="datalistOptions">
+                {this.state.stories.map((story) => (
+                  <option value={story} />
+                ))}
+              </datalist>
+              <select onChange={this.handleListChange} id="chooseMedia">
+                <option value="all" selected>
+                  every type of media
+                </option>
+                <option value="tv">television</option>
+                <option value="audio">audio</option>
+                <option value="book">book or short story</option>
+                <option value="comics">comics</option>
+              </select>
+              <button onClick={this.click} type="button" id="searchButt">
+                search story
+              </button>
+            </div>
+          );
+        }
+      }
+      ReactDOM.render(<Searching />, document.getElementById("searchBar"));
+    </script>
+  </body>
+</html>
