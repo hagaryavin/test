@@ -1,0 +1,132 @@
+button {
+  border-radius: 50%;
+  font-family: "Orbitron", sans-serif;
+}
+button:hover {
+  border-color: rgb(15, 15, 224);
+  background-color: rgb(15, 15, 224);
+  color: #ffffff;
+  cursor: pointer;
+}
+.container {
+  background-image: url("https://i.pinimg.com/originals/0b/06/39/0b06397a3199bee4a5922ee4488ebf5a.jpg");
+  background-repeat: no-repeat;
+  background-color: rgb(8, 8, 65);
+  max-width: 100%;
+}
+.col-8 {
+  vertical-align: middle;
+}
+li {
+  cursor: pointer;
+}
+li:hover {
+  color: rgb(14, 53, 112);
+  background-color: #6c98ca;
+}
+img {
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+}
+.col-8 {
+  background-color: #cccc;
+}
+body {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+}
+h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 45px;
+}
+#whoIPicked {
+  size: 20px;
+}
+ul {
+  height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+#showStories {
+  font-size: 45px;
+}
+#input-group {
+  width: 100%;
+}
+#exampleDataList {
+  width: 73%;
+}
+#btn-outline-secondary {
+  background-color: #ffffff;
+}
+#searchBar {
+  text-align: center;
+  background-image: url("https://i.pinimg.com/originals/0b/06/39/0b06397a3199bee4a5922ee4488ebf5a.jpg");
+}
+#searchButt {
+  border-radius: 10%;
+  border: 2rem;
+  margin: 5px;
+}
+#chooseMedia {
+  height: 26px;
+  border-radius: 10%;
+  border: 2rem;
+  margin: 5px;
+}
+#exampleDataList {
+  height: 26px;
+  border-radius: 10%;
+  border: 2rem;
+  margin: 5px;
+}
+@media only screen and (max-width: 721px) {
+  #btn-outline-secondary {
+    background-color: #fdfafa;
+  }
+  #exampleDataList {
+    max-width: 73%;
+  }
+  #input-group {
+    max-width: 80%;
+  }
+  ul {
+    height: 200px;
+    overflow-y: scroll;
+    overflow: visible;
+  }
+  body {
+    background-color: rgb(95, 84, 224);
+    font-family: "Orbitron", sans-serif;
+  }
+  button:hover {
+    border-color: rgb(8, 8, 65);
+    background-color: rgb(8, 8, 65);
+    color: #ffffff;
+  }
+  img {
+    border-radius: 50%;
+    height: 28px;
+    width: 22px;
+  }
+  .container {
+    background-image: url("https://i.pinimg.com/originals/fd/1f/de/fd1fdeb34632cb977625992b8afcbcae.jpg");
+  }
+  h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 10px;
+    text-align: center;
+  }
+  #searchBar {
+    text-align: center;
+    background-color: rgb(95, 84, 224);
+  }
+  #exampleDataList {
+    height: 26px;
+    min-width: 200px;
+    border-radius: 10%;
+    border: 2rem;
+    margin: 5px;
+  }
+}
